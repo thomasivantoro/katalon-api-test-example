@@ -1,0 +1,181 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "[Positive Test] - Find Pets By Name",
+        "description": "",
+        "id": "find-pets-by-name;[positive-test]---find-pets-by-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7375518,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "API is available",
+            "match": {
+              "location": "FindPetsByNameSteps.app_is_started()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1476815508,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I request find pet by name Dino",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dino",
+                  "offset": 27
+                }
+              ],
+              "location": "FindPetsByNameSteps.request_find_pet_by_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22524410,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 20
+                }
+              ],
+              "location": "FindPetsByNameSteps.get_response_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 189485784,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The pet details as below:",
+            "match": {
+              "location": "FindPetsByNameSteps.get_response_data(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "pet_name",
+                  "pet_type"
+                ]
+              },
+              {
+                "cells": [
+                  "Dino",
+                  "DOG"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "[Positive Test] - Find Pets By Name",
+        "description": "",
+        "id": "find-pets-by-name;[positive-test]---find-pets-by-name;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2199532,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "API is available",
+            "match": {
+              "location": "FindPetsByNameSteps.app_is_started()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 193408621,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I request find pet by name Hoppy",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hoppy",
+                  "offset": 27
+                }
+              ],
+              "location": "FindPetsByNameSteps.request_find_pet_by_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9214422,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 20
+                }
+              ],
+              "location": "FindPetsByNameSteps.get_response_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40858267,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The pet details as below:",
+            "match": {
+              "location": "FindPetsByNameSteps.get_response_data(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "pet_name",
+                  "pet_type"
+                ]
+              },
+              {
+                "cells": [
+                  "Hoppy",
+                  "DOG"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Find Pets By Name",
+    "description": "",
+    "id": "find-pets-by-name",
+    "keyword": "Feature",
+    "uri": "Include/features/micronaut_example_jdbc/FindPetsByName.feature",
+    "tags": []
+  }
+]
